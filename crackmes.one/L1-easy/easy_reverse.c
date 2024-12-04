@@ -8,6 +8,8 @@
 // Example:
 //./easy_reverse abcd@67899
 
+// Program was decompiled using Ghidra
+
 #include <stdio.h>
 #include <string.h>
 
@@ -17,15 +19,14 @@ int main(int argc,char **argv)
 {
   size_t arg_length;
   
-  /* If an argument has been passed */
-  
+  /* requires that one argument is passed */
   if (argc == 2) {
     arg_length = strlen(argv[1]);
     
+    /* requires that the single argument provided be 10 characters in length */
     if (arg_length == 10) {
       
       /* If the password has a '@' as the fifth character */
-      
       if (argv[1][4] == '@') {
         puts("Nice Job!!");
         printf("flag{%s}\n",argv[1]);
@@ -43,7 +44,7 @@ int main(int argc,char **argv)
   }
   return 0;
 }
-
+ /* try again flag is displayed */
 void usage(char* pass)
 {
   printf("USAGE: %s <password>\n",pass);
