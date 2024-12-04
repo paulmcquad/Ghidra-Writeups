@@ -10,6 +10,9 @@
 
 // Program was decompiled using Ghidra
 
+// Python Keygen by elprofesor:
+// easy_reverse_keygen.py
+
 #include <stdio.h>
 #include <string.h>
 
